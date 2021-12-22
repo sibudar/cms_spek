@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_global_pricings_s",
+  "info": {
+    "displayName": "Pricings ",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "Price": {
+      "type": "decimal"
+    },
+    "discountPrice": {
+      "type": "decimal"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_global_socials",
+  "info": {
+    "displayName": "Socials",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "twitter": {
+      "type": "string"
+    },
+    "whatsapp": {
+      "type": "string"
+    },
+    "phonenumber": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "google_maps": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "messenger": {
+      "type": "string"
+    },
+    "bookDirect": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    }
+  }
+}

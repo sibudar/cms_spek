@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "accomodations",
+  "info": {
+    "singularName": "accomodation",
+    "pluralName": "accomodations",
+    "displayName": "Accomodation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "num_of_guest": {
+      "type": "integer"
+    },
+    "num_of_bed": {
+      "type": "integer"
+    },
+    "num_of_bath": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "text"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.socials"
+    },
+    "country": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::country.country"
+    },
+    "Price": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.pricings"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    }
+  }
+}

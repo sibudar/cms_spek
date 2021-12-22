@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "funds",
+  "info": {
+    "singularName": "fund",
+    "pluralName": "funds",
+    "displayName": "Fund",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.contact-text-block"
+    }
+  }
+}
