@@ -56,6 +56,17 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::category.category"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    },
+    "Units": {
+      "displayName": "Rooms",
+      "type": "component",
+      "repeatable": true,
+      "component": "units.rooms"
     }
   }
 }

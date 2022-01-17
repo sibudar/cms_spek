@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_rooms_rooms",
+  "info": {
+    "displayName": "Units",
+    "icon": "bed",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "unit_image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "Unit_name": {
+      "type": "string"
+    },
+    "Unit_price": {
+      "type": "decimal"
+    },
+    "Unit_description": {
+      "type": "string"
+    },
+    "Unit_amenities": {
+      "type": "enumeration",
+      "enum": [
+        "Kitchenette"
+      ]
+    },
+    "Unit_bedrooms": {
+      "type": "integer"
+    },
+    "Unit_bathrooms": {
+      "type": "integer"
+    },
+    "no_of_beds": {
+      "type": "integer"
+    },
+    "additional_person_price": {
+      "type": "decimal"
+    }
+  }
+}
