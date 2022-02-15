@@ -32,7 +32,7 @@ function index() {
     React.useEffect(() => {
         // invalid url will trigger an 404 error
 
-        const baseURL = "http://localhost:1337/api/users"
+        const baseURL = "https://cms.spekboom.co/api/users"
         axios.get(`${baseURL}`).then((response) => {
             setPost(response.data);
         }).catch(error => {
@@ -75,7 +75,7 @@ function index() {
             "subject": subject,
             "html": body
         }
-        const baseURL = "http://localhost:1337/api/email"
+        const baseURL = "https://cms.spekboom.co/api/email"
         axios.post(`${baseURL}`, data).then((response) => {
         }).catch(error => {
             
