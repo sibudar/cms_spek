@@ -24,12 +24,29 @@
       "type": "decimal"
     },
     "Unit_description": {
-      "type": "string"
+      "type": "text"
     },
     "Unit_amenities": {
       "type": "enumeration",
       "enum": [
-        "Kitchenette"
+        "Essentials",
+        "Kitchen",
+        "Parking",
+        "TV",
+        "Heating",
+        "Dryer",
+        "Iron",
+        "Shampoo",
+        "Bath",
+        "Pool",
+        "Breakfast",
+        "Gym",
+        "Workspace",
+        "Lift",
+        "Fireplace",
+        "Hanger",
+        "Aircon",
+        "Washing"
       ]
     },
     "Unit_bedrooms": {
@@ -43,6 +60,9 @@
     },
     "additional_person_price": {
       "type": "decimal"
+    },
+    "no_guests": {
+      "type": "integer"
     }
   }
 }

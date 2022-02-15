@@ -39,6 +39,12 @@
     },
     "website": {
       "type": "string"
+    },
+    "lat": {
+      "type": "decimal"
+    },
+    "long": {
+      "type": "decimal"
     }
   }
 }

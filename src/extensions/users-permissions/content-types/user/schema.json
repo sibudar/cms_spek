@@ -66,6 +66,28 @@
     "country": {
       "type": "string",
       "required": true
+    },
+    "Avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "accomodations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::accomodation.accomodation",
+      "mappedBy": "users_permissions_user"
     }
   }
 }
