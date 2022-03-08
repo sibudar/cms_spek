@@ -19,9 +19,6 @@
     "email": {
       "type": "email"
     },
-    "facebook": {
-      "type": "string"
-    },
     "google_maps": {
       "type": "string"
     },
@@ -41,10 +38,10 @@
       "type": "string"
     },
     "lat": {
-      "type": "decimal"
+      "type": "float"
     },
     "long": {
-      "type": "decimal"
+      "type": "float"
     }
   }
 }

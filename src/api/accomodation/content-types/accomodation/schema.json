@@ -70,14 +70,14 @@
       "target": "api::tag.tag",
       "inversedBy": "accomodations"
     },
-    "users_permissions_user": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "accomodations"
-    },
     "featured": {
       "type": "boolean"
+    },
+    "users_permissions_users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "accomodations"
     }
   }
 }

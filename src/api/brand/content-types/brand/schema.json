@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "countries",
+  "collectionName": "brands",
   "info": {
-    "singularName": "country",
-    "pluralName": "countries",
-    "displayName": "Country",
+    "singularName": "brand",
+    "pluralName": "brands",
+    "displayName": "Brands",
     "description": ""
   },
   "options": {
@@ -12,13 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string"
-    },
-    "currency": {
-      "type": "string"
-    },
-    "bg": {
+    "Gallery": {
       "type": "media",
       "multiple": true,
       "required": false,
@@ -28,24 +22,20 @@
         "videos"
       ]
     },
-    "proverb": {
-      "type": "text"
+    "Name": {
+      "type": "string"
     },
-    "avaliable": {
-      "type": "boolean",
-      "default": true
+    "Website": {
+      "type": "string"
     },
-    "denomination": {
+    "Description": {
       "type": "string"
     },
     "tags": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::tag.tag",
-      "inversedBy": "countries"
-    },
-    "href": {
-      "type": "string"
+      "inversedBy": "brands"
     }
   }
 }

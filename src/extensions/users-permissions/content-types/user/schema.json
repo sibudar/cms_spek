@@ -85,9 +85,9 @@
     },
     "accomodations": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::accomodation.accomodation",
-      "mappedBy": "users_permissions_user"
+      "mappedBy": "users_permissions_users"
     }
   }
 }
