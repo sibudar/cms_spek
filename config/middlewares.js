@@ -1,21 +1,42 @@
-module.exports = ({ env }) => [
+module.exports = [
   'strapi::errors',
   {
     name: 'strapi::security',
     config: {
       contentSecurityPolicy: {
+        useDefaults: true,
         directives: {
-          'script-src': ["'self'", "'unsafe-inline'", 'cdn.jsdelivr.net'],
-          'img-src': ["'self'", 'data:', 'cdn.jsdelivr.net', 'strapi.io', `${env('AWS_BUCKET')}.s3.${env('AWS_REGION')}.amazonaws.com`],
+          'connect-src': ["'self'", 'https:'],
+          'img-src': [
+            "'self'",
+            'data:',
+            'blob:',
+            'dl.airtable.com',
+            `${env('AWS_BUCKET')}.s3.${env('AWS_REGION')}.amazonaws.com`,
+          ],
+          'media-src': [
+            "'self'",
+            'data:',
+            'blob:',
+            'dl.airtable.com',
+            `${env('AWS_BUCKET')}.s3.${env('AWS_REGION')}.amazonaws.com`,
+          ],
+          upgradeInsecureRequests: null,
         },
-      }
+      },
     },
   },
-  'strapi::cors',
+  {
+    name: 'strapi::cors',
+    config: {
+      origin: ['*'],
+    }
+  },
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',
   'strapi::body',
+  'strapi::session',
   'strapi::favicon',
   'strapi::public',
 ];
