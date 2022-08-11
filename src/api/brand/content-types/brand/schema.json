@@ -39,15 +39,12 @@
     },
     "Email": {
       "type": "email"
-<<<<<<< HEAD
     },
     "brand_types": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::brand-type.brand-type",
       "mappedBy": "brands"
-=======
->>>>>>> ac888a70322232375fa8ff7a2adbd0b5344f6890
     }
   }
 }
