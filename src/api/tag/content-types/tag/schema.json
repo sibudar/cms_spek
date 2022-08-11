@@ -34,7 +34,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::brand.brand",
-      "inversedBy": "tags"
+      "mappedBy": "tags"
     }
   }
 }

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brand_types",
+  "info": {
+    "singularName": "brand-type",
+    "pluralName": "brand-types",
+    "displayName": "BrandTag",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "BrandTag": {
+      "type": "string"
+    },
+    "brands": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::brand.brand",
+      "inversedBy": "brand_types"
+    },
+    "Featured": {
+      "type": "boolean"
+    }
+  }
+}

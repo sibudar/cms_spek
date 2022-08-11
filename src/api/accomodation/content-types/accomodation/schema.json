@@ -78,6 +78,10 @@
       "relation": "manyToMany",
       "target": "plugin::users-permissions.user",
       "inversedBy": "accomodations"
+    },
+    "Staffpad": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

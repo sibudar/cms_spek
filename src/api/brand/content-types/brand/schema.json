@@ -29,13 +29,22 @@
       "type": "string"
     },
     "Description": {
-      "type": "string"
+      "type": "text"
     },
     "tags": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::tag.tag",
       "inversedBy": "brands"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "brand_types": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::brand-type.brand-type",
+      "mappedBy": "brands"
     }
   }
 }
