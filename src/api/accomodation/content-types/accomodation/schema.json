@@ -82,6 +82,18 @@
     "Staffpad": {
       "type": "boolean",
       "default": false
+    },
+    "holiday_types": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::holiday-type.holiday-type",
+      "inversedBy": "accomodations"
+    },
+    "LongStay": {
+      "type": "boolean"
+    },
+    "newDescription": {
+      "type": "richtext"
     }
   }
 }

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "holiday_types",
+  "info": {
+    "singularName": "holiday-type",
+    "pluralName": "holiday-types",
+    "displayName": "Holiday_type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Type": {
+      "type": "string"
+    },
+    "accomodations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::accomodation.accomodation",
+      "mappedBy": "holiday_types"
+    }
+  }
+}

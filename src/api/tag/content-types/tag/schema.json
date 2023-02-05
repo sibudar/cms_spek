@@ -35,6 +35,12 @@
       "relation": "manyToMany",
       "target": "api::brand.brand",
       "mappedBy": "tags"
+    },
+    "provinces": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::province.province",
+      "mappedBy": "tags"
     }
   }
 }
