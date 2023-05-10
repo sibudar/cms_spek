@@ -91,6 +91,15 @@
     },
     "Staffpad": {
       "type": "boolean"
+    },
+    "user_type": {
+      "type": "enumeration",
+      "enum": [
+        "client",
+        "pending",
+        "owner"
+      ],
+      "default": "client"
     }
   }
 }
