@@ -94,6 +94,11 @@
     },
     "newDescription": {
       "type": "richtext"
+    },
+    "bookings": {
+      "type": "component",
+      "repeatable": true,
+      "component": "global.book"
     }
   }
 }
