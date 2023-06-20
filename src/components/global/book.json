@@ -2,7 +2,8 @@
   "collectionName": "components_global_books",
   "info": {
     "displayName": "book",
-    "icon": "american-sign-language-interpreting"
+    "icon": "american-sign-language-interpreting",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -17,8 +18,28 @@
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
     },
-    "price": {
+    "unit": {
       "type": "string"
+    },
+    "paid": {
+      "type": "boolean"
+    },
+    "occupied": {
+      "type": "boolean",
+      "default": false
+    },
+    "trx_id": {
+      "type": "string"
+    },
+    "payment_method": {
+      "type": "enumeration",
+      "enum": [
+        "Ozow",
+        "MoMo",
+        "Nightsbridge",
+        "Other"
+      ],
+      "default": "Nightsbridge"
     }
   }
 }
